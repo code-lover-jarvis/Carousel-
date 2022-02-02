@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(206, 206, 245);
+}
+
+h2{
+    top: 2rem;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 3px 4px 25px rgb(161, 172, 192);
+}
+
+.container{
+width: 25rem;
+width: 40rem;
+margin: 0 auto;
+
+
+}
+
+.profile-container{
+    margin: 3rem auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 4px 25px rgb(161, 172, 192);
+    border-radius: 10px;
+    padding: 3rem;
+        display:none;
+
+}
+
+.profile-container img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 10rem;
+    margin-left: 12rem  ;
+    box-shadow:   10px -5px  rgb(59, 147, 187);
+}
+
+.profile-container h4 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.profile-container h6{
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+    margin:  1rem auto;
+    color: rgb(112, 112, 209);
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1rem;
+}
+
+.fas{
+    margin: 1rem;
+}
+
+
+
+.like{
+    position: relative;
+    top:3rem;
+    font-size: 1.5rem;
+    left: 5rem;
+}
+  
+button{
+    height: 2rem;
+    width: 7rem;
+    background-color: rgb(187, 187, 241);
+    border: 1px solid #0d0d6b;
+    cursor: pointer;
+    position: relative;
+    margin: 1rem 14rem auto;
+    overflow: hidden;
+    transition: ease-out 0.3s;
+}
+
+button:hover{
+    border: 1px solid rgb(13, 13, 107);
+    box-shadow: inset 7rem 0 0 0 #38386b;
+    color: white;
+}
+
+
+a{
+    margin: 0 28rem auto;
+    top: -1.5rem;
+    position: relative;
+    color: rgb(140, 0, 255);
+}
+
