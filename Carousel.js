@@ -1,37 +1,25 @@
-let prev =  document.querySelector('.prev');
-let next = document.querySelector('.next');
-let rev = 0;
-carousel(rev);
-
-prev.addEventListener('click',()=>{
-    rev = rev - 1;
-    carousel(rev);
-})
-
-next.addEventListener('click',()=>{
-    rev = rev + 1;
-    carousel(rev);
-})
-
-
-function carousel(container) {
-    let reviews = document
-        .getElementsByClassName("profile-container");
-
-    if (container >= reviews.length) {
-        container = 0;
-        rev = 0;
-    }
-    if (container < 0) {
-        container = reviews.length - 1;
-        rev = reviews.length - 1;
-    }
-    for (let i = 0; i < reviews.length; i++) {
-        reviews[i].style.display = "none";
-    }
-    reviews[container].style.display = "block";
+var caro = document.getElementsByClassName("profile-container");
+var index = 0;
+caro[index].style.display = 'block';
+function prev()
+{
+  caro[index].style.display = 'none';
+  if (index == 0) {
+        caro[caro.length - 1].style.display = 'block';
+        index = caro.length - 1
+  } else {
+    caro[index-1].style.display = 'block';
+    index -= 1;
+  }
 }
-
-
-
-
+function next()
+{
+  caro[index].style.display = 'none';
+  if (index == caro.length - 1) {
+        caro[0].style.display = 'block';
+        index = 0;
+  } else {
+    caro[index+1].style.display = 'block';
+    index += 1;
+  }
+}
